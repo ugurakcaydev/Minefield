@@ -82,7 +82,7 @@ function App() {
                   {
                     "border-green-500":
                       tile === "✓" || (isGameEnd == true && tile === true),
-                    "bg-orange-500": rowIndex == currentRow && !isGameEnd,
+                    "!bg-orange-500": rowIndex == currentRow && !isGameEnd,
                     "border-red-500 ": tile === "X",
                     "pointer-events-none": isGameEnd == true,
                   }
